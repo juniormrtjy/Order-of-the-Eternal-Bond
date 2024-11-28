@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/coming-soon-bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  display: flex;
+  place-content: center;
+}
+
+section {
+  max-width: 106rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'bakbak One', sans-serif;
+  font-size: 9.6rem;
+}
+
+p {
+  font-family: 'Inter';
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1115px) {
+  main {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 7.2rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
+  figure img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 792px) {
+  h1 {
+    font-size: 6.2rem;
+  }
+}
+
+@media (max-width: 610px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  figure {
+    width: fit-content;
+    height: 30rem;
+    margin: 0 auto;
+  }
+
+  figure img {
+    width: 100%;
+    height: 100%;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
